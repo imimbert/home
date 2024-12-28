@@ -12,10 +12,7 @@
     <meta name="force-rendering" content="webkit" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#424242" />
-    <meta name="description" content="南淮花酱|MyIndex">
-    <meta name="keywords" content="Index">
-    <meta name="author" content="南淮花酱">
-    <title>Roy | MainPage</title>
+    <title>Skypka</title>
     <!-- jQuery -->
     <script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-y/jquery/3.5.1/jquery.min.js"></script>
     <!-- HarmonyOS Sans -->
@@ -72,7 +69,7 @@
                 <div class="inner three"></div>
             </div>
             <div class="loading-word">
-                <p class="loading-title" id="loading-title">Roy | MainPage</p>
+                <p class="loading-title" id="loading-title">Skypka</p>
                 <span id="loading-text">Loading......</span>
             </div>
         </div>
@@ -99,62 +96,6 @@
         <div id="g-pointer-2"></div>
         <!-- 主体内容 -->
         <main id="main" class="main">
-            <!-- 搜索框 -->
-            <div class="close-btn">
-                <span class="fas fa-times"></span>
-            </div>
-            <div class="search-btn">
-                <span class="fas fa-search"></span>
-            </div>
-            <div class="search-data">
-                <input type="text" id="inp" required />
-                <div class="line"></div>
-                <label>Type to search...</label>
-                <span class="fas fa-search" id="btn"></span>
-            </div>
-
-            <script>
-                var oInp = document.getElementById('inp');
-                var oBtn = document.getElementById('btn');
-
-                oBtn.onclick = function () {
-                    Search();
-                }
-
-                document.onkeydown = function () {
-                    if (event.keyCode == 13) {
-                        Search();
-                    }
-                }
-
-                function Search() {
-                    var url = 'https://cn.bing.com/search?q=' + oInp.value;
-                    window.open(url, '_self');
-                }
-            </script>
-
-            <script>
-                $(".search-btn").click(function () {
-                    $(this).css("display", "none");
-                    $(".search-data").fadeIn(500);
-                    $(".close-btn").fadeIn(500);
-                    $(".search-data .line").addClass("active");
-                    setTimeout(function () {
-                        $("input").focus();
-                        $(".search-data label").fadeIn(500);
-                        $(".search-data span").fadeIn(500);
-                    }, 800);
-                });
-                $(".close-btn").click(function () {
-                    $(".search-btn").fadeIn(800);
-                    $(".search-data").fadeOut(500);
-                    $(".close-btn").fadeOut(500);
-                    $(".search-data .line").removeClass("active");
-                    $("input").val("");
-                    $(".search-data label").fadeOut(500);
-                    $(".search-data span").fadeOut(500);
-                });
-            </script>
             <div class="container" id="container">
                 <div class="row" id="row">
                     <div class="col left">
@@ -164,8 +105,8 @@
                             <div class="main-img">
                                 <img id="logo-img" src="./img/icon/logo.png" alt="img">
                                 <div class="img-title">
-                                    <span class="img-title-big" id="logo-text-1">roy</span>
-                                    <span class="img-text" id="logo-text-2">.me</span>
+                                    <span class="img-title-big" id="logo-text-1">skypka</span>
+                                    <span class="img-text" id="logo-text-2">.tech</span>
                                 </div>
                             </div>
                             <!--介绍信息-->
@@ -173,7 +114,7 @@
                                 <div class="des" id="des">
                                     <i class="fa-solid fa-quote-left"></i>
                                     <div class="des-title"><span id="change">Hello&nbsp;World&nbsp;!</span><br /><span
-                                            id="change1">人生は決して終わらない。   Email: 69507devs@gmail.com</span></div>
+                                            id="change1">人生は決して終わらない。</span></div>
                                     <i class="fa-solid fa-quote-right"></i>
                                 </div>
                             </div>
@@ -197,13 +138,13 @@
                                 <a href="https://t.me/tonallies" class="link" id="telegram" target="_blank">
                                     <i class="fa-brands fa-telegram"></i>
                                 </a>
-                                <a id="link-text">通过这里联系我</a>
+                                <a id="link-text">contact me here</a>
                             </div>
                         </div>
                     </div>
                     <!--第二屏 Logo-->
                     <div class="logo cards" style="display: none" id="changemore">
-                        <a class="logo-text" id="logo-text-small">royo.asia</a>
+                        <a class="logo-text" id="logo-text-small">skypka.tech</a>
                     </div>
                     <div class="col right">
                         <div class="main-right">
@@ -221,7 +162,7 @@
                                         <div class="hitokoto-all">
                                             <div class="hitokoto-text"><span id="hitokoto_text">人生は決して終わらない。</span>
                                             </div>
-                                            <div class="hitokoto-from">-「&nbsp;<span id="from_text">Roy</span>&nbsp;」
+                                            <div class="hitokoto-from">-「&nbsp;<span id="from_text">skypka</span>&nbsp;」
                                             </div>
                                         </div>
                                     </div>
@@ -273,17 +214,17 @@
                             <!--分隔线-->
                             <div class="line">
                                 <i class="fa-solid fa-link"></i>
-                                <span class="line-text">我的网站</span>
+                                <span class="line-text">My Websites</span>
                             </div>
                             <!--网站链接-->
                             <div class="link">
                                 <!--第一组-->
                                 <div class="row">
                                     <div class="col">
-                                        <a id="link-url-1" href="https://imimbert.github.io/" target="_blank">
+                                        <a id="link-url-1" href="https://blog.skypka.tech/" target="_blank">
                                             <div class="link-card cards">
                                                 <i id="link-icon-1" class="fa-solid fa-blog"></i>
-                                                <span class="link-name" id="link-name-1">Around</span>
+                                                <span class="link-name" id="link-name-1">Blog</span>
                                             </div>
                                         </a>
                                     </div>
@@ -349,30 +290,30 @@
                     </div>
                     <div class="line" style="margin-top: 1rem;">
                         <i class="fa-solid fa-angle-left"></i>
-                        <span class="line-text">时间胶囊</span>
+                        <span class="line-text">Time</span>
                         <i class="fa-solid fa-angle-right"></i>
                     </div>
                     <div class="date" id="date">
                         <div class="item" id="dayProgress">
-                            <div class="date-text" style="margin-top: 0rem;">今日已经度过了&nbsp;<span></span>&nbsp;小时</div>
+                            <div class="date-text" style="margin-top: 0rem;">It's been &nbsp;<span></span>&nbsp;hours today</div>
                             <div class="progress">
                                 <div class="progress-bar"></div>
                             </div>
                         </div>
                         <div class="item" id="weekProgress">
-                            <div class="date-text">本周已经度过了&nbsp;<span></span>&nbsp;天</div>
+                            <div class="date-text">It's been&nbsp;<span></span>&nbsp;days this week</div>
                             <div class="progress">
                                 <div class="progress-bar"></div>
                             </div>
                         </div>
                         <div class="item" id="monthProgress">
-                            <div class="date-text">本月已经度过了&nbsp;<span></span>&nbsp;天</div>
+                            <div class="date-text">It's been&nbsp;<span></span>&nbsp; days this mouth</div>
                             <div class="progress">
                                 <div class="progress-bar"></div>
                             </div>
                         </div>
                         <div class="item" id="yearProgress">
-                            <div class="date-text">今年已经度过了&nbsp;<span></span>&nbsp;个月</div>
+                            <div class="date-text">It's been&nbsp;<span></span>&nbsp;mouths this year</div>
                             <div class="progress">
                                 <div class="progress-bar"></div>
                             </div>
@@ -380,7 +321,7 @@
                     </div>
                     <div class="line">
                         <i class="fa-solid fa-angle-left"></i>
-                        <span class="line-text">杂七杂八</span>
+                        <span class="line-text">Other</span>
                         <i class="fa-solid fa-angle-right"></i>
                     </div>
                     <!--网站链接-->
@@ -441,53 +382,11 @@
                         <!--左侧内容-->
                         <div class="box-left">
                             <div class="img-title">
-                                <span class="img-title-big" id="logo-title-other">roy</span>
-                                <span class="img-text" id="logo-title-other-small">.io</span><br />
-                                <span class="img-text">&nbsp;v&nbsp;1.1</span>
-                                <a href="https://github.com/hsBUPT" target="_blank">
-                                    <i class="fa-brands fa-github"></i>
-                                </a>
+                                <span class="img-title-big" id="logo-title-other">skypka</span>
+                                <span class="img-text" id="logo-title-other-small">.tech</span><br />
                             </div>
                             <!--更多内容-->
                             <div class="accordion" id="accordion">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseOne" aria-expanded="true"
-                                            aria-controls="collapseOne">
-                                            壁纸设置
-                                        </button>
-                                    </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse show"
-                                        aria-labelledby="headingOne" data-bs-parent="#accordion">
-                                        <div class="accordion-body">
-                                            <div class="set">
-                                                <div class="wallpaper" id="wallpaper">
-                                                    <div class="form-radio">
-                                                        <input type="radio" class="set-wallpaper" style="display: none;"
-                                                            id="radio1" value="1" name="wallpaper-type">
-                                                        <label for="radio1">默认壁纸</label>
-                                                    </div>
-                                                    <div class="form-radio">
-                                                        <input type="radio" class="set-wallpaper" style="display: none;"
-                                                            id="radio2" value="2" name="wallpaper-type">
-                                                        <label for="radio2" id="wallpaper_text1">每日一图</label>
-                                                    </div>
-                                                    <div class="form-radio">
-                                                        <input type="radio" class="set-wallpaper" style="display: none;"
-                                                            id="radio3" value="3" name="wallpaper-type">
-                                                        <label for="radio3" id="wallpaper_text2">随机风景</label>
-                                                    </div>
-                                                    <div class="form-radio">
-                                                        <input type="radio" class="set-wallpaper" style="display: none;"
-                                                            id="radio4" value="4" name="wallpaper-type">
-                                                        <label for="radio4" id="wallpaper_text3">随机动漫</label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                                 <!--更新日志-->
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingTwo">
@@ -530,7 +429,6 @@
                                                     Awesome</span>
                                                 <span class="uptext">
                                                     <i class="fa-solid fa-rotate-left"></i>
-                                                    <!-- <a href="./old/" style="color:#efefef">返回旧版站点</a> -->
                                                 </span>
                                             </div>
                                         </div>
@@ -553,10 +451,9 @@
             <div class="power">Copyright&nbsp;©&nbsp;<span id="power-year">2022</span>
                 <script>
                     document.write(' - ' + (new Date()).getFullYear())
-                </script>&nbsp;<a href="https://www.showl.link/" id="power-text">Roy</a>&nbsp;&amp;&nbsp;
+                </script>&nbsp;<a href="https://www.showl.link/" id="power-text">skypka</a>&nbsp;&amp;&nbsp;
                 <!-- 以下信息请不要修改哦 -->
-                Made&nbsp;⚙Modified from&nbsp;<a href="/" target="_blank">imsyy</a>
-                🔒<a href="https://beian.miit.gov.cn/">暂未备案</a>
+                Made&nbsp;and&nbsp;Modified from&nbsp;<a href="/" target="_blank">imsyy</a>
             </div>
             <!-- 歌词显示 -->
             <div id="lrc"></div>

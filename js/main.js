@@ -64,7 +64,7 @@ window.addEventListener(
         timeout: 2500,
         icon: false,
         title: hello,
-        message: "欢迎来到我的主页",
+        message: "Welcome to my homepage",
       });
     }, 800);
 
@@ -91,7 +91,7 @@ window.addEventListener(
 );
 
 setTimeout(function () {
-  $("#loading-text").html("字体及文件加载可能需要一定时间");
+  $("#loading-text").html("Font and file loading may take some time");
 }, 3000);
 
 // 新春灯笼 （ 需要时可取消注释 ）
@@ -136,14 +136,14 @@ $("#hitokoto").click(function () {
     iziToast.show({
       timeout: 1000,
       icon: "fa-solid fa-circle-exclamation",
-      message: "点击太快了哦",
+      message: "Click too fast",
     });
   }
 });
 
 // 获取天气
 // 请前往 https://www.mxnzp.com/doc/list 申请 app_id 和 app_secret
-const mainKey = "c577e8a40049cf51879ff72c9dc1ae8e"; // 高德开发者 Key
+const mainKey = "yDyL4TLcMRMIQJkdF19DXrYP5deJ6vuT"; // 高德开发者 Key
 const getWeather = () => {
   fetch(`https://restapi.amap.com/v3/ip?key=${mainKey}`)
     .then((response) => response.json())
@@ -285,45 +285,45 @@ $("#social")
 
 $("#github")
   .mouseover(function () {
-    $("#link-text").html("去 Github 看看");
+    $("#link-text").html("go Github");
   })
   .mouseout(function () {
-    $("#link-text").html("通过这里联系我");
+    $("#link-text").html("Contact me here");
   });
 $("#qq")
   .mouseover(function () {
-    $("#link-text").html("有什么事吗");
+    $("#link-text").html("hello!");
   })
   .mouseout(function () {
-    $("#link-text").html("通过这里联系我");
+    $("#link-text").html("contact me here");
   });
 $("#email")
   .mouseover(function () {
-    $("#link-text").html("来封 Email");
+    $("#link-text").html("Email me ");
   })
   .mouseout(function () {
-    $("#link-text").html("通过这里联系我");
+    $("#link-text").html("contact me here");
   });
 $("#bilibili")
   .mouseover(function () {
-    $("#link-text").html("来 B 站看看 ~");
+    $("#link-text").html("BIlibili");
   })
   .mouseout(function () {
-    $("#link-text").html("通过这里联系我");
+    $("#link-text").html("contact me here");
   });
 $("#telegram")
   .mouseover(function () {
-    $("#link-text").html("你懂的 ~");
+    $("#link-text").html("...");
   })
   .mouseout(function () {
-    $("#link-text").html("通过这里联系我");
+    $("#link-text").html("contact me here");
   });
 
 //自动变灰
 let myDate = new Date();
 let mon = myDate.getMonth() + 1;
 let date = myDate.getDate();
-let days = ["4.4", "5.12", "7.7", "9.9", "9.18", "12.13"];
+let days = [];
 for (let day of days) {
   let d = day.split(".");
   if (mon == d[0] && date == d[1]) {
@@ -355,11 +355,11 @@ $("#switchmore").on("click", function () {
   if (shoemore && $(document).width() >= 990) {
     $("#container").attr("class", "container mores");
     $("#change").html("Oops&nbsp;!");
-    $("#change1").html("哎呀，这都被你发现了（ 再点击一次可关闭 ）");
+    $("#change1").html("Time flies. Click again to cancel.");
   } else {
     $("#container").attr("class", "container");
     $("#change").html("Hello&nbsp;World&nbsp;!");
-    $("#change1").html("一个不正经的Up");
+    $("#change1").html("人生は決して終わらない。");
   }
 });
 
@@ -408,7 +408,7 @@ window.addEventListener("load", function () {
       //移动端隐藏更多页面
       $("#container").attr("class", "container");
       $("#change").html("Hello&nbsp;World&nbsp;!");
-      $("#change1").html("一个不正经的Up");
+      $("#change1").html("人生は決して終わらない。");
 
       //移动端隐藏弹窗页面
       $("#box").css("display", "none");
@@ -463,7 +463,7 @@ color: rgb(244,167,89);
 let styleContent = `
 color: rgb(30,152,255);
 `;
-let title1 = "無名の主页";
+let title1 = "homepage";
 let title2 = `
  _____ __  __  _______     ____     __
 |_   _|  \\/  |/ ____\\ \\   / /\\ \\   / /
@@ -476,7 +476,7 @@ let content = `
 版 本 号：3.4
 更新日期：2022-07-24
 
-主页:  https://www.imsyy.top
+主页:  https://www.skypka.tech
 Github:  https://github.com/imsyy/home
 `;
 console.log(
